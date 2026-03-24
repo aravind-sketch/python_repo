@@ -10,7 +10,7 @@ def read_file(file_name):
                 print(f"Required word found {count} time(s)! [Feature branch change]")
                 print(data)
             else:
-                print("Word 'data' not found in file.")
+                print("Word 'data' not found in folder.")
 
     except FileNotFoundError:
         print("File not found!")
