@@ -7,7 +7,7 @@ def read_file(file_name):
             count = data.lower().count("data")  # case-insensitive count
             
             if count > 0:
-                print(f"Required word found {count} time(s)! [Feature branch change]")
+                print(m"Required word found {count} time(s)! [Feature branch change]")
                 print(data)
             else:
                 print("Word 'data' not found in file.")
