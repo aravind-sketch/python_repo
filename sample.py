@@ -3,8 +3,11 @@ def read_file(file_name):
         with open(file_name, 'r') as file:
             data = file.read()
             
-            if "data" in data:
-                print("Required word found!")
+            # ✅ NEW: count occurrences of the word "data"
+            count = data.lower().count("data")  # case-insensitive count
+            
+            if count > 0:
+                print(f"Required word found {count} time(s)!")
                 print(data)
             else:
                 print("Word 'data' not found in file.")
@@ -12,4 +15,5 @@ def read_file(file_name):
     except FileNotFoundError:
         print("File not found!")
 
+# Call the function
 read_file("sample.txt")
